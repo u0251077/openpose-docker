@@ -8,10 +8,11 @@ import argparse
 import pyopenpose as op
 
 try:
-    """
     # Import Openpose (Windows/Ubuntu/OSX)
     dir_path = os.path.dirname(os.path.realpath(__file__))
+    """
     try:
+        
         # Windows Import
         if platform == "win32":
             # Change these variables to point to the correct folder (Release/x64 etc.)
@@ -62,13 +63,12 @@ try:
     datum = op.Datum()
     imageToProcess = cv2.imread(args[0].image_path)
     datum.cvInputData = imageToProcess
-    opWrapper.emplaceAndPop([datum])
+    opWrapper.emplaceAndPop(op.VectorDatum([datum]))
 
     # Display Image
     print("Body keypoints: \n" + str(datum.poseKeypoints))
-    cv2.imwrite("result_body.jpg", datum.cvOutputData)
-    #cv2.imshow("OpenPose 1.6.0 - Tutorial Python API", datum.cvOutputData)
-    #cv2.waitKey(0)
+    cv2.imshow("OpenPose 1.7.0 - Tutorial Python API", datum.cvOutputData)
+    cv2.waitKey(0)
 except Exception as e:
     print(e)
     sys.exit(-1)
