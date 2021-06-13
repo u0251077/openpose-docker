@@ -56,6 +56,7 @@ $ bash getModels.sh
 $ cd /openpose/examples/tutorial_api_python
 
 # please follow this commit to fix code(https://github.com/u0251077/openpose-docker/commit/2e304a7997c41d287386f12c4ec80281d8c107bc)
+# you can use vim to modify the code
 $ python3 01_body_from_image.py
 ```
 
