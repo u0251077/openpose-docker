@@ -39,6 +39,10 @@ $ python3
 >>> import pyopenpose as op
 >>> 
 ```
+#### setup x11 in your local cmd
+```
+$ xhost +
+```
 
 #### run examples
 ```
