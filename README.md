@@ -11,26 +11,26 @@ https://hub.docker.com/r/cwaffles/openpose
 
 ### Getting started
 
-#### cloning the repo.
+#### cloning the repo.(local cmd)
 ```
 $ git clone https://github.com/u0251077/openpose-docker.git
 ```
-#### build the image using dockerfile
+#### build the image using dockerfile(local cmd)
 ```
 $ cd ./openpose-docker
 $ sudo docker build -t openpose .
 ```
-#### start docker env.
+#### start docker env.(local cmd)
 ```
 $ sudo docker run --gpus all --net host -e DISPLAY=:1 --name openpose_test -it openpose:latest /bin/bash
 ```
 
-#### build python openpose
+#### build python openpose(docker)
 ```
 $ cd /openpose/build/python/openpose
 $ make install
 ```
-#### setup env. for pyopenpose
+#### setup env. for pyopenpose(docker)
 ```
 $ cd /openpose/build/python/openpose
 $ cp ./pyopenpose.cpython-36m-x86_64-linux-gnu.so /usr/local/lib/python3.6/dist-packages
@@ -41,12 +41,12 @@ $ python3
 >>> import pyopenpose as op
 >>> 
 ```
-#### setup x11 in your local cmd
+#### setup x11 in your local cmd(local cmd)
 ```
 $ xhost +
 ```
 
-#### run examples
+#### run examples(docker)
 ```
 # download model
 $ cd /openpose/models
