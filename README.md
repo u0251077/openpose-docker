@@ -20,7 +20,7 @@ $ sudo docker build -t openpose .
 ```
 #### start docker env.
 ```
-$ sudo docker run --gpus all --name openpose_test -it openpose:latest /bin/bash
+$ sudo docker run --gpus all --net host -e DISPLAY=:1 --name openpose_test -it openpose:latest /bin/bash
 ```
 
 #### build python openpose
