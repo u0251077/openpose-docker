@@ -1,4 +1,6 @@
 # openpose-docker
+2021-06-13: update the code, fix some bug
+
 A docker build file for CMU openpose with Python API support
 
 https://hub.docker.com/r/cwaffles/openpose
@@ -52,7 +54,8 @@ $ bash getModels.sh
 
 # test python examples
 $ cd /openpose/examples/tutorial_api_python
-# please follow this commit to fix code(https://github.com/u0251077/openpose-docker/commit/33560c437d0b0d9c57ecb0627890d5af926426a5)
+
+# please follow this commit to fix code(https://github.com/u0251077/openpose-docker/commit/2e304a7997c41d287386f12c4ec80281d8c107bc)
 $ python3 01_body_from_image.py
 ```
 
