@@ -13,7 +13,7 @@ https://hub.docker.com/r/cwaffles/openpose
 
 #### cloning the repo.
 ```
-$ git clone https://github.com/esemeniuc/openpose-docker.git
+$ git clone https://github.com/u0251077/openpose-docker.git
 ```
 #### build the image using dockerfile
 ```
